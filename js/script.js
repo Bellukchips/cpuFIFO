@@ -422,7 +422,7 @@ function showFinalTable(input, output, outputDiv) {
 
     // average response time
     let resultArt = 0;
-    output.responseTime.forEach((e) => (resultArt += e));
+    output.turnAroundTime.forEach((e) => (resultArt += e));
     let art = document.createElement("p");
     art.innerHTML = "ART : " + resultArt / process;
     art.className = "text-center";
